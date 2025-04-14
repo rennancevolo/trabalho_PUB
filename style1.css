@@ -1,0 +1,129 @@
+@charset "utf8";
+
+:root {
+    /*toda variavel em css comeca com dois traços */
+    --cor0: #595959;
+    --cor1: #737373;
+    --cor2: #8C8C8C;
+    --cor3: #A6A6A6;
+    --cor4: #BFBFBF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url('fundo_site/marmore2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.474);
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > div {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+main > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+#titulo {
+    font-size: 2.4rem;
+    color: #2c1a0d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1.8rem 0;
+    letter-spacing: 2px;
+    grid-column: 1 / -1; 
+    text-align: center;
+}
+
+
+.titulo_drink {
+    font-size: 1.5rem;
+    color: #4a2c1a;
+    margin: 1rem 0;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.fotos_drink {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.4s, filter 0.3s;
+}
+
+.fotos_drink:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+footer {
+    background-image: linear-gradient(to bottom,rgb(122, 120, 120),rgb(215, 208, 208));
+    border-radius: 7px 7px 0px 0px;
+    font-size: 13px;
+    box-shadow: 1px -4px 4px rgba(0, 0, 0, 0.397);
+    color: black;
+    display: block;
+    margin: 50px 0 0 0; 
+    padding: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer > p > a {
+    color: black;
+}
+
+footer > p > a:hover {
+    color: var(--cor3);
+}
+
+#contatos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
