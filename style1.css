@@ -16,9 +16,9 @@
 
 
 body {
+    background-color: var(--cor4);
     background-image: url('fundo_site/marmore2.jpg');
     background-size: cover;
-    background-color: var(--cor4);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
