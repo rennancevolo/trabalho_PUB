@@ -110,7 +110,7 @@ main > div:hover {
 }
 
 footer {
-    background-image: linear-gradient(to bottom,rgb(122, 120, 120),rgb(215, 208, 208));
+    background-color: var(--cor4);
     font-size: 0.7rem;
     box-shadow: 1px -4px 4px rgba(0, 0, 0, 0.397);
     color: black;
