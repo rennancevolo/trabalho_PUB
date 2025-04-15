@@ -113,6 +113,7 @@ main > div:hover {
 footer {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     width: 100%;
     margin-top:2rem;
@@ -227,7 +228,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: black;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 1.5rem;
     font-weight: 200;
     color: white;
