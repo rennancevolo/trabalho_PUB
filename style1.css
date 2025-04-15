@@ -1,4 +1,5 @@
 @charset "utf8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
     /*toda variavel em css comeca com dois traços */
@@ -31,7 +32,7 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.474);
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.474);
     display: block;
 }
 
@@ -110,26 +111,138 @@ main > div:hover {
 }
 
 footer {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top:2rem;
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.361);
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+#footer_content {
     background-color: var(--cor4);
-    font-size: 0.7rem;
-    box-shadow: 1px -4px 4px rgba(0, 0, 0, 0.397);
-    color: black;
-    display: block;
-    margin: 50px 0 0 0; 
-    padding: 10px;
-    font-weight: 400;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
 }
 
-footer > p > a {
-    color: black;
+#footer_contacts {
+    margin-bottom: 0.75rem;
 }
 
-footer > p > a:hover {
-    color: var(--cor3);
-}
-
-#contatos {   
+#footer_social_media {
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor0);
+    border-radius: 50%;
+    transition: all 0.4s;
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background : linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267d3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: black;
+}
+
+.footer-list .footer-link:hover {
+    color: var(--cor1);
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: black;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;;
+}
+
+#input_group input {
+    all: unset;
+    background-color: var(--cor2);
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    font-weight: 200;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
 }
