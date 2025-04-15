@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.474);
     display: block;
 }
@@ -117,7 +117,7 @@ footer {
     display: block;
     margin: 50px 0 0 0; 
     padding: 10px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
 }
 
