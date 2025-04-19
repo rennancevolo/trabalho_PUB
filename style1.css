@@ -242,11 +242,19 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+
+    body {
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (max-width: 506px) {
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
+    }
+    
+    body {
+        background-attachment: fixed;
     }
 }
