@@ -301,12 +301,10 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        z-index: -1; /* Coloca atrás de todo o conteúdo */
     }
     
     /* Remove o fundo padrão do body */
     body {
-        background: none;
         min-height: 100vh;
     }
     
@@ -338,13 +336,12 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        z-index: -1; /* Coloca atrás de todo o conteúdo */
+        scroll-snap-type: y mandatory;
+        scroll-padding-top: 1rem;
     }
     
     /* Remove o fundo padrão do body */
     body {
-        background-color: var(--cor4);
-        background: none;
         min-height: 100vh;
     }
     
