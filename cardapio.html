@@ -260,7 +260,7 @@
             img.onerror = assetLoaded; // Continua mesmo se houver erro
         });
 
-        // Timeout de segurança caso alguma imagem não carregue
+        // Timeout de segurança caso alguma imagem não carregue 
         setTimeout(() => {
             if (loadedAssets < totalAssets) {
                 document.getElementById('preloader').style.opacity = '0';
