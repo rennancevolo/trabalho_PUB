@@ -79,7 +79,6 @@ body {
 header {
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor2));
     box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.474);
-    display: block;
 }
 
 main {
@@ -108,7 +107,6 @@ main > div:hover {
 
 #logo {
     width: 130px;
-    display: block;
     margin: 0 auto;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
