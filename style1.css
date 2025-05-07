@@ -155,6 +155,13 @@ main > div:hover {
     line-height: 1.5;
 }
 
+.preco {
+    color: rgb(45, 74, 45);
+    font-size: 1.3rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
 footer {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
