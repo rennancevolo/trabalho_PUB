@@ -120,7 +120,15 @@ main > div:hover {
     grid-column: 1 / -1; 
     text-align: center;
 }
-
+.titulo_salgados {
+    font-size: 2.2rem;
+    color: #2c1a0d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1.8rem 0;
+    letter-spacing: 2px;
+    grid-column: 1 / -1; 
+    text-align: center;
+}
 
 .titulo_drink {
     font-size: 1.4rem;
@@ -131,7 +139,7 @@ main > div:hover {
     letter-spacing: 0.04rem;
 }
 
-.fotos_drink {
+.fotos {
     width: 100%;
     max-width: 280px;
     height: 280px;
@@ -141,9 +149,10 @@ main > div:hover {
     margin: 0 auto;
     display: block;
     transition: transform 0.4s, filter 0.3s;
+    
 }
 
-.fotos_drink:hover {
+.fotos:hover {
     transform: scale(1.03);
     filter: brightness(1.1);
 }
